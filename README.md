@@ -41,7 +41,7 @@ Audio and video recordings demonstrating the circuit in action, comparing the cl
 * See FuzzAudioDemo.wav for audio demonstration of clean tone vs. fuzz tone.
 * **Notice** Gain is increased in the second version of the bass line. The fuzz version is much fuller and saturated than the original, clean version.
 
-## Lessons Learned
+## Project Challenges
 
 * The largest setback for this project was the lack of components. I did not have many of the original schematic's parts, so I had to use the parts I had to replicate the tone of the original.
 * The main component I was forced to work with was the PN2222 transistor. This also caused me to use three resistors together to create a custom resistance to increase gain.
