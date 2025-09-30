@@ -10,14 +10,12 @@ This repository documents the successful creation of a single-transistor guitar 
 * **Component Substitution:** Identified key electrical differences between the 2N5088 and PN2222 transistors.
 * **Circuit Modification & Biasing:** Adjusted resistor values (R2 and R3) to re-bias the circuit and compensate for the loss in gain, ensuring proper operation of the PN2222 transistor.
 * **Signal Path Understanding:** Analyzed the flow of the guitar signal through the circuit and the effect of each component.
-* **Documentation:** Created clear and concise project documentation, including schematics, a Bill of Materials, and audio/video demonstrations.
 
 ## Circuit Design
 
 The pedal is based on a simple common-emitter NPN transistor amplifier stage. The key modification involved changing the collector and emitter resistor values to push the lower-gain PN2222 transistor into a high-gain state, producing the desired fuzz effect.
 
-* **Original Schematic:** [Link to your original schematic image]
-* **Modified Schematic:** [Link to your modified schematic image, showing the new R2 and R3 values]
+* See FuzzSchematic.jpg for schematic information
 
 ## Bill of Materials (BOM)
 
@@ -25,26 +23,26 @@ A complete list of all the components used in this project.
 
 * **Transistor (Q1):** PN2222 NPN BJT
 * **Resistors:**
-    * R1: 3MΩ
-    * R2: [Your new value, e.g., 50KΩ]
-    * R3: [Your new value, e.g., 220Ω]
-    * R4: 100KΩ
+    * R1: 1MΩ
+    * R2: 100kΩ
+    * R3: 30kΩ
+    * R4: 220Ω
 * **Capacitors:**
     * C1: 100nF
-    * C2: 10nF
-    * C3: 100nF
-* **Potentiometer:** [Your Volume Pot value, e.g., 100KΩ log taper]
-* **Power:** 9V DC supply ([Note: Must be center-negative])
+    * C2: 100nF
+* **Potentiometer:** 100KΩ log taper
+* **Power:** 9V DC supply
 
 ## Project Demonstration
 
 Audio and video recordings demonstrating the circuit in action, comparing the clean signal to the effected signal.
 
-* **Audio Demo:** [Link to your audio file]
-* **Video Demo:** [Link to your video file]
+* **Audio Demo:**
+* See FuzzAudioDemo.wav for audio demonstration of clean tone vs. fuzz tone.
+* **Notice** Gain is increased in the second version of the bass line. The fuzz version is much fuller and saturated than the original, clean version.
 
 ## Lessons Learned
 
-* [Discuss the specific challenges you faced, such as biasing issues or unwanted noise, and how you solved them.]
-* [Reflect on the difference in sound created by the component substitution and resistor changes.]
-* [Any other insights or lessons from the build process.]
+* The largest setback for this project was the lack of components. I did not have many of the original schematic's parts, so I had to use the parts I had to replicate the tone of the original.
+* The main component I was forced to work with was the PN2222 transistor. This also caused me to use three resistors together to create a custom resistance to increase gain.
+* This extra gain made up for the loss of gain by using a PN2222 transistor.
